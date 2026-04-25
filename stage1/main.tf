@@ -18,9 +18,9 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_container_registry" "teacher-acr" {
+resource "azurerm_container_registry" "colebreinig-acr" {
   name = "acrteacheracmp2400"
-  resource_group_name = "rg-teacher"
+  resource_group_name = "rg-colebreinig"
   location = "Central US"
   sku = "Basic"
   admin_enabled = false
