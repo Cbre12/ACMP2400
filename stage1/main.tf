@@ -19,7 +19,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_container_registry" "colebreinig-acr" {
-  name = "acrteacheracmp2400"
+  name = "acrcolebreinigacmp2400"
   resource_group_name = "rg-colebreinig"
   location = "Central US"
   sku = "Basic"
