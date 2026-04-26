@@ -53,7 +53,7 @@ resource "azurerm_container_group" "aci-colebreinig-acmp" {
         DJANGO_SECRET_KEY = var.DJANGO_SECRET_KEY_PROD
     }
   }
-  image_registry_credential
+  image_registry_credential {
     server = "acrcolebreinigacmp2400.azurecr.io"
     username = var.ARM_CLIENT_ID
     password = var.ARM_CLIENT_SECRET
