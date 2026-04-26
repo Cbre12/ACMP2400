@@ -39,7 +39,7 @@ resource "azurerm_container_group" "aci-colebreinig-acmp" {
   os_type             = "Linux"
 
   container {
-    name   = "final-app"
+    name   = "final"
     image  = "acrcolebreinigacmp2400.azurecr.io/final:latest"
     cpu    = "0.5"
     memory = "1.5"
