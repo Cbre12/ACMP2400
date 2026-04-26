@@ -35,7 +35,7 @@ resource "azurerm_container_group" "aci-colebreinig-acmp" {
   location            = "Central US"
   resource_group_name = "rg-colebreinig"
   ip_address_type     = "Public"
-  dns_name_label      = "aci-colebreinig-acmp"
+  dns_name_label      = "acmp-colebreinig-instance"
   os_type             = "Linux"
 
   container {
