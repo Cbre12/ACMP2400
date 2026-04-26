@@ -1,6 +1,6 @@
 variable ARM_CLIENT_ID {}
 variable ARM_CLIENT_SECRET {}
-variable DJANGO_SECRET_KEY {}
+variable DJANGO_SECRET_KEY_PROD {}
 
 terraform {
   required_providers {
@@ -47,6 +47,10 @@ resource "azurerm_container_group" "aci-colebreinig-acmp" {
     ports {
       port     = 8000
       protocol = "TCP"
+    }
+
+    secure_enviroment_variables {
+        DJANGO_SECRET_KEY = var.DJANGO_SECRET_KEY_PROD
     }
   }
   image_registry_credential
