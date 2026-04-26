@@ -68,6 +68,7 @@ jobs:
           docker build -t application-final .
           docker tag application-final acrcolebreinigacmp2400.azurecr.io/final
           docker push acrcolebreinigacmp2400.azurecr.io/final
+          
   tf-stage-2:
     needs: build-tag-push
     runs-on: ubuntu-latest
