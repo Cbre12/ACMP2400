@@ -6,6 +6,10 @@ This is my final project for ACMP2400. It is an Ubuntu-based Docker container th
 
 Go to the Actions tab and run the workflow "Build-Curl-Test-Deploy-Test-Undeploy" to build and deploy the Docker container.
 
+## Hosted container link
+
+http://acmp-colebreinig-instance.centralus.azurecontainer.io:8000/
+
 ## File Structure
 
 ```bash
