@@ -31,8 +31,11 @@ ACMP2400/
 │       └── terraform/
 │           ├── action.yaml
 │           ├── Dockerfile
-│           ├── entrypoint.sh
-│           └── curl_test.yaml
+│           └── entrypoint.sh
+│
+├── .github/
+│   └── workflows/
+│       └── curl_test.yaml
 │
 ├── final_app/
 │   ├── asgi.py
